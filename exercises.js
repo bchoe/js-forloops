@@ -8,6 +8,8 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
+console.log('question 1');
+
 for (var i = 1; i < 21; i++){
   console.log("Now serving ", i);
 }
@@ -43,7 +45,20 @@ This function will iterate through the person parameter and console.log the foll
 
 "President person was a great leader."
 */
+var presidents = ['Washington', 'Adams', 'Jefferson', 'Madison', 'Monroe'];
+console.log('question 2')
+for (var i = 0; i < presidents.length; i ++){
+ 
+  console.log('The value at ', i, ' is ', presidents[i]);
+}
 
+function leaders(person){
+  for ( var i = 0; i < person.length; i++){
+    console.log('President ', person[i], ' was a great leader');
+  }
+}
+
+leaders(presidents);
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
